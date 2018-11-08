@@ -8,6 +8,8 @@ fastcgi_param                   SCRIPT_FILENAME $document_root$fastcgi_script_na
 
 fastcgi_param                   MAGENTO_ROOT /var/www/html;
 fastcgi_param                   REMOTE_ADDR $remote_addr;
+fastcgi_param                   MAGE_RUN_TYPE 'website';
+fastcgi_param                   MAGE_RUN_CODE $MAGE_RUN_CODE;
 
 fastcgi_buffer_size             1024k;
 fastcgi_buffers                 500 512k;
